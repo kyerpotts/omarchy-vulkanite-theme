@@ -1,4 +1,7 @@
-local active_border = { colors = { "rgba(37868bee)", "rgba(8fe0faee)" }, angle = 35 }
+local active_border = {
+  colors = { "rgba(4fa3a6ee)", "rgba(151b1eee)", "rgba(151b1eee)", "rgba(4fa3a6ee)" },
+  angle = 0,
+}
 local inactive_border = "rgba(5c637066)"
 
 hl.config({
@@ -7,8 +10,8 @@ hl.config({
       active_border = active_border,
       inactive_border = inactive_border,
     },
-    gaps_in = 5,
-    gaps_out = 8,
+    gaps_in = 3,
+    gaps_out = 5,
     border_size = 2,
   },
   group = {
@@ -18,7 +21,7 @@ hl.config({
     },
   },
   decoration = {
-    rounding = 8,
+    rounding = 4,
     rounding_power = 3,
     shadow = {
       enabled = true,
@@ -27,7 +30,7 @@ hl.config({
     },
     blur = {
       enabled = true,
-      size = 5,
+      size = 7,
       passes = 2,
       special = true,
       brightness = 0.82,
